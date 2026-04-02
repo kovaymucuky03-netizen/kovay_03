@@ -72,6 +72,9 @@ body {
 }
 
 .burger:hover {
+  opacity: 0.7;
+}
+.burger:hover {
   background: white;
   color: black;
 }
