@@ -65,15 +65,8 @@ body {
   border: 1px solid #333;
   transition: 0.3s;
 
-  background: none;      /* ❌ убрали фон */
-  border: none;          /* ❌ убрали рамку */
-  padding: 0;            /* ❌ убрали отступы */
-  
 }
 
-.burger:hover {
-  opacity: 0.7;
-}
 .burger:hover {
   background: white;
   color: black;
@@ -278,6 +271,13 @@ footer {
 /* ===== MOBILE VERSION ===== */
 @media (max-width: 768px) {
 
+    body {
+    background: url('bg-mobile.png') no-repeat center center;
+    background-size: cover;
+
+    background-attachment: scroll; /* 💀 ВОТ ФИКС */
+  }
+  
   .menu {
     width: 100%;
     padding: 20px;
@@ -315,12 +315,6 @@ body {
   background-attachment: fixed;
 }
 
-/* 📱 мобильный фон */
-@media (max-width: 768px) {
-      body {
-    background: url('bg-mobile.png') no-repeat center center;
-    background-size: cover;
 
-    background-attachment: scroll; /* 💀 ВОТ ФИКС */
-  }
-}
+
+
