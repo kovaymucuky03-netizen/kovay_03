@@ -308,8 +308,10 @@ body {
 
 /* 📱 мобильный фон */
 @media (max-width: 768px) {
-  body {
-    background: url('bg-mobile.png') no-repeat center center fixed;
+      body {
+    background: url('bg-mobile.png') no-repeat center center;
     background-size: cover;
+
+    background-attachment: scroll; /* 💀 ВОТ ФИКС */
   }
 }
