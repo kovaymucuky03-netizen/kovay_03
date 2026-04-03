@@ -17,3 +17,11 @@ function toggleSub(id) {
   const el = document.getElementById(id);
   el.style.display = el.style.display === "block" ? "none" : "block";
 }
+
+document.addEventListener("click", (e) => {
+  if (window.innerWidth <= 768) {
+    if (!menu.contains(e.target) && !burger.contains(e.target)) {
+      menu.classList.remove("active");
+    }
+  }
+});
